@@ -12,6 +12,9 @@ const config = {
 		vite: {
 			ssr: {
 				noExternal: ['chart.js']
+			},
+			optimizeDeps: {
+				include: ['chart.js']
 			}
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
